@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles/mainstyles.css">
+<header>
+	<div class="header">
+		<title> Forms </title>
+		<h1>ITSC3135 Page - William Hemric</h1>
+	</div>
+</header>
+<main>
+<h2><br><br>Forms Page</h2>
+	<body>
+		<form action="#">
+			<p>Anything marked with a * is optional.</p>
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" required size="24" placeholder="Your Name Here"><br>
+			<label for="phone">*Phone Number:</label><br>
+			<input type="tel" id="phone" name="phone" size="12" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+			<label for="email">Email Address:</label><br>
+			<input type="email" id="email" name="email" required size="24" placeholder="placeholder@website.com"><br>
+			<input type="checkbox" id="pressure" name="pressure" value="Yes">
+			<label for="pressure">I can work under pressure.</label><br>
+			<p>*Gender:</p>
+			<input type="radio" id="male" name="gender" value="Male">
+			<label for="male">Male</label><br>
+			<input type="radio" id="female" name="gender" value="Female">
+			<label for="female">Female</label><br>
+			<input type="radio" id="othergender" name="gender" value="Other">
+			<label for="othergender">Other</label><br>
+			<label for="codingexp">How much coding experience would you say you have overall?</label><br>
+			<select id="codingexp" name="codingexp">
+				<option value="none">None</option>
+				<option value="little">A little</option>
+				<option value="moderate">A moderate amount</option>
+				<option value="lot">A lot</option>
+			</select><br>
+			<input type="submit" value="Submit">
+			<input type="reset">
+
+		</form>
+	</body>
+</main>
+<footer>
+	<div class="footer">
+		<p><a href="index.html">ITSC3135 Main Page</a> | <a href="hemricdesigns.com/">Hemric Designs</a> | whemric1@uncc.edu | © William Hemric</p>
+	</div>
+</footer>
+<!-- Hi Sean. -->
+</html>

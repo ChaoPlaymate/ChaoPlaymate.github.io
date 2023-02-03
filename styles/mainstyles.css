@@ -1,0 +1,88 @@
+/*.navbar {
+	background-color: #63ADF2;
+	overflow: hidden;
+}*/
+head {
+			color: #FCF7F8;
+			font-family: verdana;
+			}
+			.header {
+				position: fixed;
+				background-color: #63ADF2;
+				left: 0;
+				top: 0;
+				width: 100%;
+			}
+			body {
+			background-color: #192A51;
+			color: #FCF7F8;
+			font-family: verdana;
+			}
+			p {
+			font-family: verdana;
+			color: #FCF7F8;
+			}
+			.footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				background-color: #63ADF2;
+				color: FCF7F8;
+				text-align: center;
+				}
+			
+			.border1 {
+				border: 5px outset #63ADF2;
+				padding: 8px;
+			}
+			a:link {
+				color: #74D3AE;
+				}
+			a:visited {
+				color: #656176;
+				}
+			a:hover {
+				color: #FCF7F8;
+				text-decoration: underlined;
+				}
+			a:active {
+				color: #74D3AE;
+				}
+			tr:nth-child(even) {
+				background-color: #656176;
+			}
+			tr:nth-child(odd) {
+				background-color: #63ADF2;
+			}
+			tr:nth-child(1) {
+				background-color: #0E182F;
+			}
+			input[type=text] {
+				border: 2px solid #63ADF2;
+				color: #000000;
+			}
+			input[type=tel] {
+				border: 2px solid #63ADF2;
+				color: #000000;
+			}
+			input[type=email] {
+				border: 2px solid #63ADF2;
+				color: #000000;
+			}
+			input[type=submit] {
+				background-color: #0E182F;
+				color: #FFFFFF;
+			}
+			input[type=text]:focus {
+				background-color: #63ADF2;
+				color: #000000
+			}
+			input[type=tel]:focus {
+				background-color: #63ADF2;
+				color: #000000
+			}
+			input[type=email]:focus {
+				background-color: #63ADF2;
+				color: #000000
+			}
