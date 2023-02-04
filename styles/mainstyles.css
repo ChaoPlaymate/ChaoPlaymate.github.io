@@ -6,12 +6,16 @@ head {
 			color: #FCF7F8;
 			font-family: verdana;
 			}
-			.header {
-				position: fixed;
+			header {
+				border-style: none none outset none;
+				border-color: #FFFFFF;
 				background-color: #63ADF2;
-				left: 0;
-				top: 0;
 				width: 100%;
+				max-width: 100%;
+				margin: -8px;
+				margin-top:-8px;
+				padding: 8px;
+				
 			}
 			body {
 			background-color: #192A51;
@@ -22,15 +26,19 @@ head {
 			font-family: verdana;
 			color: #FCF7F8;
 			}
-			.footer {
-				position: fixed;
-				left: 0;
-				bottom: 0;
-				width: 100%;
+			footer {
+				width: 100%;;
+				height: rem;
 				background-color: #63ADF2;
-				color: FCF7F8;
+				color: #FCF7F8;
+				bottom: 0;
 				text-align: center;
-				}
+				margin: -8px;
+				margin-top: 2rem;
+				padding:8px;
+				border-style: outset none none none;
+				border-color: #FFFFFF;
+			}
 			
 			.border1 {
 				border: 5px outset #63ADF2;
