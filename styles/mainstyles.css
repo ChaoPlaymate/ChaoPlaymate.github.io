@@ -27,6 +27,7 @@ head {
 			color: #FCF7F8;
 			}
 			footer {
+				position: fixed;
 				width: 100%;;
 				height: rem;
 				background-color: #63ADF2;
@@ -93,4 +94,7 @@ head {
 			input[type=email]:focus {
 				background-color: #63ADF2;
 				color: #000000
+			}
+			main {
+				padding-bottom: 5rem;
 			}

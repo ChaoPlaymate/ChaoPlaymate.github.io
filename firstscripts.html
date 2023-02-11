@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/mainstyles.css">
+<script src="scripts/defaultscripts.js"></script>
+<script>
+</script>
+</head>
+<header>
+		<title> First Scripts </title>
+		<h1>ITIS3135 Page - William Hemric</h1>
+		<p><a href="index.html">Home</a> | <a href="hemricdesigns.com">Design Firm</a> | <a href="tables.html">Tables</a> | <a href="forms.html">Forms</a> | <a href="stuff/GarBAGE!! TraSH.htm">Crappy Page</a> | <a href="website_evaluations.html">CRAP Web Evaluations</a> | <a href="firstscripts.html">First Scripts</a></p>
+</header>
+<main>
+<h2>First Scripts Page</h2>
+<h3 id="dateTime"></h3>
+<script>
+	const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+	
+	let currentDate = new Date();
+	let currentDay = currentDate.getDate();
+	let currentMonth = month[currentDate.getMonth() - 1];
+	let currentYear = currentDate.getFullYear();
+	let time = currentDate.getHours() + ":" + currentDate.getMinutes();
+	let weekDay = weekday[currentDate.getDay()];
+	
+	let fullDateTime = "Today is " + time + " on " + weekDay + ", " + currentDay + " " + currentMonth + " " + currentYear + " at " + time;
+	document.getElementById("dateTime").innerHTML = fullDateTime;
+</script>
+<noscript>Unable to run script for date and time</noscript>
+	<body>
+		<p id="welcome"></p>
+		<form id="form1">
+			<label for="name">Name:</label>
+			<input id="name" type="text" required><br>
+			<label for="mood">Mood:</label>
+			<input id="mood" type="text" required><br>
+			<input type="button" onClick="displayWelcome()" value="Submit">
+			<input type="reset">
+		</form>
+		
+		<section id="function1Section">
+		
+			<div class="border1">
+				<h4>1)</h4>
+				<img src="images/wildherring1.png" alt="Wild Herring Logo">
+				<form id="swimForm">
+					<label for="swimNumber">How many times should I swim?</label>
+					<input id="swimNumber" type="number" required><br>
+					<input type="button" onClick="startSwim()" value="Submit">
+					<input type="reset">
+				</form>
+			<p id="swimLines"></p>
+			</div>
+		</section>
+		<section id="function2Section">
+			<div class="border1">
+				<h4>2)</h4>
+				<p>Combine two fish for a new hybrid fish name!</p>
+				<form id="fishNamesForm">
+					<select name="fishName1" id="fishName1">
+						<option value="carp">Carp</option>
+						<option value="koi">Koi</option>
+						<option value="bass">Bass</option>
+						<option value="herring">Herring</option>
+					</select>
+					<select name="fishName2" id="fishName2">
+						<option value="carp">Carp</option>
+						<option value="koi">Koi</option>
+						<option value="bass">Bass</option>
+						<option value="herring">Herring</option>
+					</select>
+					<br>
+					<input type="button" onClick="combineFish()" value="Submit">
+					<input type="reset">
+				</form>
+			<p id="newFishNameText"></p>
+			</div>
+		</section>
+		<section id="function3Section">
+			<div class="border1">
+				<h4>3)</h4>
+				<p>You should prepare 4 hours in advance before going swimming!</p>
+				<form>
+					<input type="button" onClick="fourHourSwim()" value="What time is in 4 hours">
+					
+				</form>
+				<p id="fourHourLaterTime"></p>
+			</div>
+		</section>
+		<section id="function4Section">
+			<div class="border1">
+				<h4>4)</h4>
+				<p>Fishy Coin Flip!</p>
+				<form>
+					<img id="fishCoin" src="images/fishcoinblank.png">
+					<input type="button" onClick="flipFishCoin()" value="Flip Coin">
+					<p id="fishCoinResult"></p>
+				</form>
+			</div>
+		</section>
+		<section id="function5Section">
+			<div class="border1">
+				<h4>5)</h4>
+				<p>A tank has a certain amount of yellow and red fish in it. Set the number of each and then press the button to calculate the probability of pulling out a red fish if you reach your hand in without looking and pull out only one.</p>
+				<form id="fishColors">
+					<label for="yellowFishCount">Yellow Fish:</label><input type="number" id="yellowFishCount" placeholder="1"><br>
+					<label for="redFishCount">Red Fish:</label><input type="number" id="redFishCount" placeholder="1"><br>
+					<input type="button" onClick="fishColorCalculate()" value="Calculate">
+				</form>
+				<p id="fishChanceText">The chance of picking out a red fish is 50%.</p>
+			</div>
+		</section>
+		<!-- <script>scriptTest();</script> -->
+	</body>
+</main>
+<footer>
+		<p><a href="index.html">ITSC3135 Main Page</a> | <a href="hemricdesigns.com/">Hemric Designs</a> | whemric1@uncc.edu | © William Hemric</p>
+</footer>
+</html>
