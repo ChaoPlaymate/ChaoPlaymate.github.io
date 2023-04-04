@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/mainstyles.css">
+<script src="scripts/slidescript.js"></script>
+<header>
+		<title>Slideshow</title>
+		<div data-include="components/titlenav.html"></div>
+		</header>
+<h2>Slideshow</h2>
+	<body>
+	<div class="slideshow-container">
+		<div class="SlidesItem" id="firstSlide">
+			<div class="numbertext">1/6</div>
+			<a href="images/fishslides1.jpg"><img class="slideitemimg" src="images/fishslides1.jpg"></a>
+			<div class="captext">School of Red Fish</div>
+		</div>
+		<div class="SlidesItem">
+			<div class="numbertext">2/6</div>
+			<a href="images/fishslides2.jpg"><img class="slideitemimg" src="images/fishslides2.jpg"></a>
+			<div class="captext">This fish has a large head.</div>
+		</div>
+		<div class="SlidesItem">
+			<div class="numbertext">3/6</div>
+			<a href="images/fishslides3.jpg"><img class="slideitemimg" src="images/fishslides3.jpg"></a>
+			<div class="captext">This fish has yellow and purple colors.</div>
+		</div>
+		<div class="SlidesItem">
+			<div class="numbertext">4/6</div>
+			<a href="images/fishslides4.jpg"><img class="slideitemimg" src="images/fishslides4.jpg"></a>
+			<div class="captext">2 different fish seen here.</div>
+		</div>
+		<div class="SlidesItem">
+			<div class="numbertext">5/6</div>
+			<a href="images/fishslides5.jpg"><img class="slideitemimg" src="images/fishslides5.jpg"></a>
+			<div class="captext">Koi Fish!</div>
+		</div>
+		<div class="SlidesItem">
+			<div class="numbertext">6/6</div>
+			<a href="images/fishslides6.jpg"><img class="slideitemimg" src="images/fishslides6.jpg"></a>
+			<div class="captext">Stripes can be seen on this fish.</div>
+		</div>
+		
+		<a class="back" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="forward" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	
+	<div style="text-align:center">
+		<span class="dot active" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+		<span class="dot" onclick="currentSlide(6)"></span>
+	</div>
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/include.js"></script>
+	</body>
+</main>
+</html>

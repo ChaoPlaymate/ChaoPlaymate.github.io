@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+	// NOTE: You don't need to mess around with 
+	// CSS to follow the tutorial. Focus on the 
+	// JavaScript instead!
+	// =========================
+
+	// Some personal resets
+	
+	.calculator__display {
+	  background-color: #222222;
+	  color: #fff;
+	  font-size: 1.714285714em;
+	  padding: 0.5em 0.75em;
+	  text-align: right;
+	}
+
+	.calculator__keys {
+	  background-color: #999;
+	  display: grid;
+	  grid-gap: 1px;
+	  grid-template-columns: repeat(4, 1fr);
+	}
+
+	.calculator__keys > * {
+	  background-color: #fff;
+	  padding: 0.5em 1.25em;
+	  position: relative;
+	  text-align: center;
+	}
+
+	.calculator__keys > *:active::before,
+	.calculator__keys > .is-depressed::before {
+	  background-color: rgba(0, 0, 0, 0.2);
+	  bottom: 0;
+	  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+	  content: "";
+	  left: 0;
+	  opacity: 0.3;
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	  z-index: 1;
+	}
+
+	.key--operator {
+	  background-color: #eee;
+	}
+
+	.key--equal {
+	  background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+	  grid-column: -2;
+	  grid-row: 2 / span 4;
+	}
+</style>
+<link rel="stylesheet" href="styles/mainstyles.css">
+<script src="scripts/defaultscripts.js"></script>
+<header>
+		<title>Calculator FCC</title>
+		<h1>ITIS3135 Page - William Hemric</h1>
+		<p><a href="index.html">Home</a> | <a href="hemricdesigns.com">Design Firm</a> | <a href="tables.html">Tables</a> | <a href="forms.html">Forms</a> | <a href="stuff/GarBAGE!! TraSH.htm">Crappy Page</a> | <a href="website_evaluations.html">CRAP Web Evaluations</a> | <a href="firstscripts.html">First Scripts</a> | <a href="polygons.html">Polygons</a></p></header>
+		
+<main>
+<h2>Calculator FCC</h2>
+	<body>
+	<div class="container">
+    <p>
+      This component works exactly like the calculator you know. Click any number to start calculating!
+    </p>
+    <div class="calculator">
+      <div class="calculator__display">0</div>
+
+      <div class="calculator__keys">
+        <button class="key--operator" data-action="add">+</button>
+        <button class="key--operator" data-action="subtract">-</button>
+        <button class="key--operator" data-action="multiply">&times;</button>
+        <button class="key--operator" data-action="divide">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decimal">.</button>
+        <button data-action="clear">AC</button>
+        <button class="key--equal" data-action="calculate">=</button>
+      </div>
+    </div>
+  </div>
+	</body>
+</main>
+<footer>
+		<p><a href="index.html">ITSC3135 Main Page</a> | <a href="hemricdesigns.com/">Hemric Designs</a> | whemric1@uncc.edu | © William Hemric</p>
+</footer>
+</html>

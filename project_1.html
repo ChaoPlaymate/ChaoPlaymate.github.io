@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/mainstyles.css">
+<script src="scripts/defaultscripts.js"></script>
+<header>
+		<title>Project 1</title>
+		<div data-include="components/titlenav.html"></div>
+		</header>
+<h2>Project 1 Requirements and Design Document</h2>
+	<body>
+	<h3>Project Overview</h3>
+		<p>The purpose of this web application to act as a hub for the musical artist Miximiximixing that allows users to find the artist's music between different distribution platforms. Users will be able to navigate to songs between multiple locations online using the site's links. It will also be made possible for users to find methods of communication and submit messages to contact Miximiximixing through the app.</p>
+		<br>
+		<p>A general overview includes the home page, about page, contact page, and music directory page. The first three pages are self-explanatory, and the fourth page will provide a list of all of the artist's music as is available through different services and provide links to the music on each service it is available on.</p>
+	<br>
+	<h3>Client Information</h3>
+		<ul>
+			<li>Name: [Confidential]</li>
+			<li>Business: Private Individual (Miximiximixing artist)</li>
+			<li>email: kitanotsundo@gmail.com (This is a pseudonym, not the real name of the client)</li>
+			<li>Phone: [Confidential]</li>
+		</ul>
+	<br>
+	<h3>Wireframe</h3>
+		<p>Check the link through <a href="https://drive.google.com/file/d/1bCDszIeKrgk6ZXY8P2HrP9JIZSrHzYa9/view?usp=sharing">Google Drive</a></p>
+		<figure>
+			<iframe src="https://drive.google.com/file/d/1bCDszIeKrgk6ZXY8P2HrP9JIZSrHzYa9/preview" width="640" height="480" allow="autoplay"></iframe>
+			<figcaption>Home page Wireframe</figcaption>
+		</figure>
+	<br>
+	<h3>Site Map</h3>
+		<p>Check the link through <a href="https://drive.google.com/file/d/1iRbS2IZXS1IpfhrVYwbupwzNoDFzaI5F/view?usp=sharing">Google Drive</a></p>
+		<figure>
+			<iframe src="https://drive.google.com/file/d/1iRbS2IZXS1IpfhrVYwbupwzNoDFzaI5F/preview" width="640" height="480" allow="autoplay"></iframe>
+			<figcaption>Site Map</figcaption>
+		</figure>
+	<h3>Page Design</h3>
+		<h4>Home</h4>
+			<ul>
+				<li>Name: Home</li>
+				<li>Purpose: To act as a main hub to move to other parts of the app.</li>
+				<li>Audience/Users: Customer</li>
+				<li>Content: An image gallery as well as a selection of links will be contained on the Home page.</li>
+				<li>Is data being entered?: No</li>
+				<li>Data Fields need validations?: N/A</li>
+				<li>Buttons/Hyperlinks/Dropdowns: Hyperlinks</li>
+				<li>Actions on this page: Click links to navigate between pages</li>
+				<li>Special notes?: None</li>
+			</ul>
+		<h4>About</h4>
+			<ul>
+				<li>Name: About</li>
+				<li>Purpose: To give more detailed information about the artist and the work put on display through the project.</li>
+				<li>Audience/Users: Customer</li>
+				<li>Content: Most of the content of this page will be normal paragraph text.</li>
+				<li>Is data being entered?: No</li>
+				<li>Data Fields need validations?: N/A</li>
+				<li>Buttons/Hyperlinks/Dropdowns: Hyperlinks</li>
+				<li>Actions on this page: Click the link to return to the Home page.</li>
+				<li>Special notes?: None</li>
+			</ul>
+		<h4>Contact</h4>
+			<ul>
+				<li>Name: Contact Me</li>
+				<li>Purpose: Provides contact information for Miximiximixing as well as access to a form to contact them directly.</li>
+				<li>Audience/Users: Customer</li>
+				<li>Content: Paragraph text and links, containing things such as email and social media accounts.</li>
+				<li>Is data being entered?: No</li>
+				<li>Data Fields need validations?: N/A</li>
+				<li>Buttons/Hyperlinks/Dropdowns: Hyperlinks</li>
+				<li>Actions on this page: Click links to navigate between pages</li>
+				<li>Special notes?: None</li>
+			</ul>
+		<h4>Contact Directly</h4>
+			<ul>
+				<li>Name: Message Me</li>
+				<li>Purpose: To allow an easy to way send a direct email to Miximiximixing.</li>
+				<li>Audience/Users: Customer</li>
+				<li>Content: Form with text fields, check boxes, and buttons</li>
+				<li>Is data being entered?: Yes</li>
+				<li>Data Fields need validations?: Yes, for email to make sure the response can be found by the user if a response is sent.</li>
+				<li>Buttons/Hyperlinks/Dropdowns: Hyperlinks, buttons.</li>
+				<li>Actions on this page: Click links to navigate between pages, send form.</li>
+				<li>Special notes?: This system may later change to allow the artist to view messages within the app, rather than through an email service.</li>
+			</ul>
+		<h4>Songs</h4>
+			<ul>
+				<li>Name: Song Directory</li>
+				<li>Purpose: To provide a list of every published track by the artist with links to where they can be found.</li>
+				<li>Audience/Users: Customer</li>
+				<li>Content: Contains song names and album/cover art (if it exists for the song) with links to the song on music hosting services that the particular song was uploaded to. Also contains links to show a list only containing songs from a specific year.</li>
+				<li>Is data being entered?: No</li>
+				<li>Data Fields need validations?: N/A</li>
+				<li>Buttons/Hyperlinks/Dropdowns: Hyperlinks</li>
+				<li>Actions on this page: Click links to navigate between pages</li>
+				<li>Special notes?: None</li>
+			</ul>
+		<h4>Year 1/2/3/4/etc.</h4>
+			<ul>
+				<li>Name: Year [Insert Year Number]</li>
+				<li>Purpose: To provide a more concise and detailed list of songs for a specific year since the start of the artist's music production.</li>
+				<li>Audience/Users: Customer</li>
+				<li>Content: A list of music for the year in question. In addition to the inclusions of the full list, these lists will contain short musical samples for each song that can be played using an audio element. These will be omitted from the main list to avoid clutter and large amounts of loading that will only worsen as more tracks are added.</li>
+				<li>Is data being entered?: No</li>
+				<li>Data Fields need validations?: N/A</li>
+				<li>Buttons/Hyperlinks/Dropdowns: Hyperlinks</li>
+				<li>Actions on this page: Click links to navigate between pages, play music samples</li>
+				<li>Special notes?: None</li>
+			</ul>
+		<h4>Platforms</h4>
+			<ul>
+				<li>Name: Platform Directory</li>
+				<li>Purpose: To provide a list of every platform that Miximiximixing can be found on.</li>
+				<li>Audience/Users: Customer</li>
+				<li>Content: Mainly hyperlinks and paragraph text</li>
+				<li>Is data being entered?: No</li>
+				<li>Data Fields need validations?: N/A</li>
+				<li>Buttons/Hyperlinks/Dropdowns: Hyperlinks</li>
+				<li>Actions on this page: Click links to navigate between pages</li>
+				<li>Special notes?: None</li>
+			</ul>
+	<br>
+	<h3>Dynamic Functionality</h3>
+		<p>A photo gallery will be included. This will allow album artwork and promotional art to be viewed from the home page. In addition, forms will be used to submit messages to the artist from users and/or potential customers.</p>
+		<p><a href="https://www.kahalaresort.com/Contact-us/">Contact Form Example</a></p>
+		<p><a href="https://www.flickr.com/photos/rockonit/8546866756/in/photolist-e2fVHE-e2fXZh-e2fX6f-e2fVDo-e2fVe7-v2k3U-e2ajXp-e2ajuc-e2aif6-9ezMsn-aDtN9H-e2ajmr-6MTBY4-tLC3K-e2fWF9-QcDZrg-LpsNES-ecoHwb-bmezDU-2mAiGaH-e2akaR-c3wPhw-2hqjFGB-5ymwM8-moMzhz-bz9sUZ-bz9sxi-bmerwj-grd9wD-nTDWzq-2ic7HD4-pHwSNR-bz9hbF-qxvGLd-2nVayth-2mv7fK1-bBA1Jf-2N6bq-bmezJj-bLkRRP-8AWGnb-8G2RzR-bz9sMk-nPeg5Q-nvihQc-abNEan-bxr3C5-dQMXhH-q7Z6nf-Ry7Y9E/">Photo Gallery Example</a></p>
+		
+	<div data-include="components/footer.html"></div>
+	<script src="scripts/include.js"></script>
+	</body>
+</main>
+</html>

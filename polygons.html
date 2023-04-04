@@ -2,14 +2,17 @@
 <html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="styles/mainstyles.css">
-<script src="scripts/defaultscripts.js"></script>
+<script src="scripts/polygons.js"></script>
 <header>
-		<title>Template</title>
+		<title> Name the Polygon </title>
 		<div data-include="components/titlenav.html"></div>
 		</header>
-<h2>Template Page</h2>
+<h2>Polygon Name Tool</h2>
 	<body>
-	<br>	
+	<form>
+		<input type="number" id="shapeSides" name="shapeSides" required>
+		<input onClick="outputShape()" type="button" value="Submit" id="submitShape">
+	</form>
 	<div data-include="components/footer.html"></div>
 	<script src="scripts/include.js"></script>
 	</body>
